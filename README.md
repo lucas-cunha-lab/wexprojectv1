@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 # 🚀 Project Management App (Salesforce LWC + Apex)
 
 This is a simple project management application built in Salesforce using **Lightning Web Components (LWC)** and **Apex Triggers**.
