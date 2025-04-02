@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Prevent_Manual_Status_Change</fullName>
+    <active>true</active>
+    <errorConditionFormula>ISCHANGED(Status__c)</errorConditionFormula>
+    <errorMessage>You can&apos;t change the status field manually</errorMessage>
+</ValidationRule>
