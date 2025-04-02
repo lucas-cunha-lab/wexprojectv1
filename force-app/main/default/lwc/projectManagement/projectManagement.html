@@ -1,0 +1,34 @@
+
+<template>
+    <div class="custom-header slds-p-around_medium">
+        <h1>Project Development</h1>
+    </div>
+
+    <lightning-card>
+        <div class="slds-p-around_medium">
+            <template if:true={step1}>
+                <lightning-input label="Project Name" value={projectName} onchange={handleProjectNameChange}></lightning-input>
+                <lightning-button label="Create Project" onclick={handleCreateProject} class="slds-m-top_medium"></lightning-button>
+            </template>
+
+            <template if:true={step2}>
+                <lightning-input label="Milestone Name" value={milestoneName} onchange={handleMilestoneNameChange}></lightning-input>
+                <lightning-button label="Add Milestone" onclick={handleAddMilestone} class="slds-m-top_medium"></lightning-button>
+                <lightning-button label="Next Step" onclick={handleNextStep} class="slds-m-top_medium slds-m-left_x-small"></lightning-button>
+            </template>
+
+            <template if:true={step3}>
+                <lightning-input label="To-Do Name" value={todoName} onchange={handleTodoNameChange}></lightning-input>
+                <lightning-button label="Create To-Do" onclick={handleCreateTodo} class="slds-m-top_medium"></lightning-button>
+
+                <template if:true={projectId}>
+                    <lightning-button 
+                        label="Save Record" 
+                        onclick={handleCreateAndOpenProject} 
+                        class="slds-m-top_medium">
+                    </lightning-button>
+                </template>
+            </template>
+        </div>
+    </lightning-card>
+</template>

@@ -1,0 +1,18 @@
+.custom-header {
+    background-color: #fddede;
+    border-radius: 0.5rem;
+    text-align: center;
+    color: #a60000;
+    font-weight: bold;
+    font-size: 1.5rem;
+    padding: 1rem;
+    margin-bottom: 1rem;
+}
+
+.todo-box {
+    padding: 0.75rem;
+    background-color: #f4f6f9;
+    border: 1px solid #d8dde6;
+    border-radius: 0.5rem;
+    font-weight: 500;
+}
